@@ -27,9 +27,10 @@ for i in range(33):
 
     #Data e Hora
     data = datetime.now()
-    hora_utc = data - timedelta(hours=3)
+    horas = -3
+    hora_utc = data + timedelta(hours=horas)
     data_utc_string = data.strftime("%d/%m/%Y")
-    hora_utc_string = data.strftime("%H:%M:%S")
+    hora_utc_string = hora_utc.strftime("%H:%M:%S")
 
     #Tweet
     text = f"""💰💸 Atualização! 💸💰
